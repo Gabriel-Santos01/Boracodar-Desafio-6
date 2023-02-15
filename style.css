@@ -61,31 +61,26 @@ strong {
 
 .ticket {
   background: white;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
 }
 
 .top {
-  border-radius: 30px 30px 20px 20px;
-  /* clip-path: polygon(
-    0% 94%,
-    3% 96%,
-    5% 100%,
-    96% 99%,
-    97% 94%,
-    100% 94%,
-    100% 0%,
-    0% 0%
-  ); */
+  border-radius: 30px 30px 0 0;
+  --mask: radial-gradient(1.2rem at 1.2rem 1.2rem, transparent 95%, black) -1.2rem -1.2rem;
 }
 
 .middle {
   border: 1px dashed black;
-  border-radius: 20px;
   border-left: none;
   border-right: none;
+
+  --mask: radial-gradient(1.2rem at 1.2rem 1.2rem, transparent 95%, black) -1.2rem -1.2rem;
 }
 
 .bottom {
-  border-radius: 20px 20px 30px 30px;
+  border-radius: 0 0 30px 30px;
+  --mask: radial-gradient(1.2rem at 1.2rem 1.2rem, transparent 95%, black) -1.2rem -1.2rem;
 }
 
 .big {
